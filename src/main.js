@@ -9,16 +9,13 @@ import CardGame from "./components/CardGame";
 const $root = document.querySelector("#root");
 const $htmlCardGame = CardGame();
 
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
-$root.insertAdjacentHTML("beforeend", $htmlCardGame);
+for (let i = 0; i < 6; i++) {
+    $root.insertAdjacentHTML("beforeend", ($htmlCardGame + `${i}`));
+}
 
 //WIP
 /* 
-facil replicar o componente do card 6x
+[X] DESAFIO fácil: replicar o componente do card 6x
 intermediário criar o componente de nome de player com cada um tendo o seu nome
 difícil criar o outro lado do cartão e quando clicar nele ele deve virar
 */
