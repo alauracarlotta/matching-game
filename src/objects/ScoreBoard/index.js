@@ -1,7 +1,7 @@
 import './style.css'
 import PlayerName from "../../components/PlayerName";
 
-const PlayerScore = () => {
+const ScoreBoard = () => {
     let  $htmlPlayerName = ''
 
     for (let i = 0; i < 2; i++) {
@@ -9,10 +9,10 @@ const PlayerScore = () => {
     }
 
     return /* html */ `
-        <div class="name-player">
+        <header class="name-player">
             ${$htmlPlayerName}
-        </div>
+        </header>
     `
 }
 
-export default PlayerScore;
+export default ScoreBoard;
