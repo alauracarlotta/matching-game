@@ -1,6 +1,6 @@
 import './style.css'
 
-const PlayerScore = (player) => {
+const NamePlayer = (player) => {
     return /* html */ `
         <div class="press-start-2p-regular">
             Player ${player}
@@ -8,4 +8,4 @@ const PlayerScore = (player) => {
     `
 };
 
-export default PlayerScore;
+export default NamePlayer;

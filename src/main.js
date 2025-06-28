@@ -4,18 +4,17 @@ import "/src/styles/base/reset.css";
 import "/src/styles/elements/base.css";
 
 /* Objects */
+import PlayerScore from "./objects/PlayerScore";
 import BoardGame from "./objects/BoardGame";
 
 /* Components */
-import PlayerScore from "./components/PlayerScore";
+
 
 const $root = document.querySelector("#root");
+const $htmlPlayerScore = PlayerScore();
 const $htmlBoardGame = BoardGame(6);
 
-for (let i = 1; i <= 2; i++) {
-    $root.insertAdjacentHTML("beforeend", PlayerScore(i))
-}
-
+$root.insertAdjacentHTML("beforeend", ($htmlPlayerScore))
 $root.insertAdjacentHTML("beforeend", ($htmlBoardGame))
 
 //WIP
