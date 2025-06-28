@@ -11,11 +11,14 @@ import BoardGame from "./objects/BoardGame";
 
 
 const $root = document.querySelector("#root");
-const $htmlPlayerScore = PlayerScore();
-const $htmlBoardGame = BoardGame(6);
 
-$root.insertAdjacentHTML("beforeend", ($htmlPlayerScore))
-$root.insertAdjacentHTML("beforeend", ($htmlBoardGame))
+$root.insertAdjacentHTML(
+    "beforeend", 
+    `
+        ${PlayerScore()}
+        ${BoardGame(6)}
+    `
+)
 
 //WIP
 /* 
