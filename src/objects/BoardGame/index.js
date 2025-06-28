@@ -1,7 +1,6 @@
 import './style.css';
 import CardFrontBack from '/src/components/CardFrontBack';
 
-
 const BoardGame = (amountCards) => {
     const $htmlCardFrontBack = CardFrontBack();
     const $htmlContent = $htmlCardFrontBack.repeat(amountCards);
@@ -13,6 +12,6 @@ const BoardGame = (amountCards) => {
             </div>
         </section>
     `;
-}
+};
 
 export default BoardGame;

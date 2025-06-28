@@ -1,8 +1,8 @@
-import './style.css'
-import PlayerName from "../../components/PlayerName";
+import './style.css';
+import PlayerName from '../../components/PlayerName';
 
 const ScoreBoard = () => {
-    let  $htmlPlayerName = ''
+    let $htmlPlayerName = '';
 
     for (let i = 0; i < 2; i++) {
         $htmlPlayerName += PlayerName(i + 1);
@@ -12,7 +12,7 @@ const ScoreBoard = () => {
         <header class="name-player">
             ${$htmlPlayerName}
         </header>
-    `
-}
+    `;
+};
 
 export default ScoreBoard;
