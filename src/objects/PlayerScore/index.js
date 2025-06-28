@@ -1,16 +1,16 @@
 import './style.css'
-import NamePlayer from "../../components/NamePlayer";
+import PlayerName from "../../components/PlayerName";
 
 const PlayerScore = () => {
-    let  $htmlNamePlayer = ''
+    let  $htmlPlayerName = ''
 
     for (let i = 0; i < 2; i++) {
-        $htmlNamePlayer += NamePlayer(i + 1);
+        $htmlPlayerName += PlayerName(i + 1);
     }
 
     return /* html */ `
         <div class="name-player">
-            ${$htmlNamePlayer}
+            ${$htmlPlayerName}
         </div>
     `
 }

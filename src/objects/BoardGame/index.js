@@ -8,7 +8,7 @@ const BoardGame = (amountCards) => {
 
     return /* html */ `
         <section class="board-game">
-            <div class="player-score">
+            <div class="cards-game">
                 ${$htmlContent}
             </div>
         </section>
