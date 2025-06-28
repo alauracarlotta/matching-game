@@ -1,5 +1,5 @@
-.press-start-2p-regular {
-    font-family: "Press Start 2P", system-ui;
+.font-regular {
+    font-size: 1rem;
     font-weight: 400;
     font-style: normal;
     color: var(--color-player-font);
