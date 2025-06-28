@@ -9,7 +9,6 @@ import BoardGame from "./objects/BoardGame";
 
 /* Components */
 
-
 const $root = document.querySelector("#root");
 
 $root.insertAdjacentHTML(
