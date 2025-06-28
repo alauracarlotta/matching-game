@@ -20,7 +20,7 @@ $root.insertAdjacentHTML("beforeend", ($htmlBoardGame))
 
 //WIP
 /* 
-[X] DESAFIO fácil: replicar o componente do card 6x
-[X] intermediário criar o componente de nome de player com cada um tendo o seu nome
-difícil criar o outro lado do cartão e quando clicar nele ele deve virar
+[X] DESAFIO fácil: Replicar o componente do card 6x
+[X] DESAFIO intermediário: Criar o componente de nome de player com cada um tendo o seu nome
+[ ] DESAFIO difícil: criar o outro lado do cartão e quando clicar nele ele deve virar
 */
