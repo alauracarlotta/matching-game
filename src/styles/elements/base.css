@@ -1,11 +1,11 @@
 :root {
-    font-size: 10px;
-    height: 100%;
+	font-size: 10px;
+	height: 100%;
 }
 
 body {
-    font-family: "Press Start 2P", system-ui;
-    background-color: var(--color-background);
-    max-width: 512px;
-    margin: 0 auto;
+	font-family: 'Press Start 2P', system-ui;
+	background-color: var(--color-background);
+	max-width: 512px;
+	margin: 0 auto;
 }

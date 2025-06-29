@@ -1,7 +1,7 @@
 import './style.css';
 
 const PlayerName = (player) => {
-    return /* html */ `
+	return /* html */ `
         <div class="font-regular">
             Player ${player}
         </div>
