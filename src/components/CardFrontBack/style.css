@@ -1,3 +1,27 @@
 .card-front-back {
+    --width: 130px;
+    --height: 160px;
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    transition: transform 600ms cubic-bezier(.42,0,.54,1.68);
+    transform-style: preserve-3d;
+}
 
+.card-front-back.-active {
+    transform: rotateY(180deg);
+}
+
+.card-front-back > .card {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front-back > .card.-front {
+    background-color: var(--color-card-game-front);
+}
+
+.card-front-back > .card.-back {
+    background-color: var(--color-card-game-back);
+    transform: rotateY(180deg);
 }
