@@ -5,7 +5,7 @@
 
 body {
 	font-family: 'Press Start 2P', system-ui;
-	background-color: var(--color-background);
+	background-color: var(--color-background-board);
 	max-width: 512px;
 	margin: 0 auto;
 }

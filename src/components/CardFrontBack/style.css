@@ -19,10 +19,10 @@
 }
 
 .card-front-back > .card.-front {
-	background-color: var(--color-card-game-front);
+	background-color: var(--color-background-card-game-front);
 }
 
 .card-front-back > .card.-back {
-	background-color: var(--color-card-game-back);
+	background-color: var(--color-background-card-game-back);
 	transform: rotateY(180deg);
 }

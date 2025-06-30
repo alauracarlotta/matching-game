@@ -1,7 +1,16 @@
 :root {
-    --color-background: #7C5E99;
-    --color-card-game-front: #051932;
-    --color-card-game-back: #F25A70;
-    --color-card-border: #FFFCEE;
-    --color-player-font: #FFFCCC;
+	/* bgc */
+	--color-background-board: #7c5e99;
+	--color-background-card-game-front: #051932;
+	--color-background-card-game-back: #f25a70;
+	--color-background-game-score: #828282;
+
+	/* border */
+	--color-border-card-front-back: #fffcee;
+	--color-border-game-score-all: #f25a70;
+	--color-border-game-score-square: #fffcee;
+
+	/* font */
+	--color-font-name-player: #fffccc;
+	--color-font-vs-player: #f5d547;
 }
