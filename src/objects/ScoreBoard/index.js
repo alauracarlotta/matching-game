@@ -1,17 +1,18 @@
 import './style.css';
 import PlayerName from '../../components/PlayerName';
+import VsScore from '../../components/VsPlayer';
+import GameScore from '../../components/GameScore';
 
 const ScoreBoard = () => {
-    let $htmlPlayerName = '';
-
-    for (let i = 0; i < 2; i++) {
-        $htmlPlayerName += PlayerName(i + 1);
-    }
-
-    return /* html */ `
+	return /* html */ `
         <header class="name-player">
-            ${$htmlPlayerName}
+            ${PlayerName(1)}
+            ${GameScore()}
+            ${VsScore()}
+            ${GameScore()}
+            ${PlayerName(2)}
         </header>
+        
     `;
 };
 

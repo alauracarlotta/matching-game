@@ -1,5 +1,6 @@
 .name-player {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem auto 1rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem auto 1rem;
+	align-items: center;
 }

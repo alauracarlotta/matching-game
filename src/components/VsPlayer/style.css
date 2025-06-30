@@ -1,4 +1,4 @@
 .vs-player {
 	font-size: 1rem;
-	color: #f5d547;
+	color: var(--color-font-vs-player);
 }

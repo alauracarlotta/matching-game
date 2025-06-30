@@ -1,0 +1,12 @@
+.game-score {
+	display: flex;
+	box-sizing: border-box;
+	border: 2px solid var(--color-border-game-score-all);
+}
+
+.game-score > .square {
+	width: 1.6rem;
+	height: 1.6rem;
+	background-color: var(--color-background-game-score);
+	border: 2px solid var(--color-border-game-score-square);
+}
