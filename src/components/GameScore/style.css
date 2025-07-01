@@ -10,3 +10,19 @@
 	background-color: var(--color-background-game-score);
 	border: 2px solid var(--color-border-game-score-square);
 }
+
+.game-score[data-points='1'] > .square:first-child {
+	background-color: var(--color-background-game-score-point);
+}
+
+.game-score[data-points='2'] {
+	flex-direction: row-reverse;
+}
+
+.game-score[data-points='2'] > .square:nth-child(n + 2) {
+	background-color: var(--color-background-game-score-point);
+}
+
+.game-score[data-points='3'] > .square {
+	background-color: var(--color-background-game-score-point);
+}
