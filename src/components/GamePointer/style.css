@@ -1,0 +1,10 @@
+.game-pointer {
+	width: 20px;
+	height: 15px;
+	position: relative;
+	left: 192px;
+}
+
+.game-pointer.-active {
+	left: 298px;
+}

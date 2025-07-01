@@ -6,11 +6,11 @@ const GameScore = () => {
 		$htmlSquare += `<div class="square"></div>`;
 	}
 	return /* html */ `
-	<div class="game-score">
-		<div class="game-score -square">
-			${$htmlSquare}
+		<div class="game-score">
+			<div class="game-score -square">
+				${$htmlSquare}
+			</div>
 		</div>
-	</div>
 	`;
 };
 

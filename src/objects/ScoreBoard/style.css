@@ -1,6 +1,10 @@
+.score-board {
+	margin-top: 1rem;
+}
+
 .name-player {
 	display: flex;
 	justify-content: space-between;
-	margin: 2rem auto 1rem;
+	margin: 0px auto 1rem;
 	align-items: center;
 }
