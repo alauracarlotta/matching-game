@@ -7,14 +7,12 @@ import GamePointer from '../../components/GamePointer';
 const ScoreBoard = () => {
 	return /* html */ `
         <div class="score-board">
-            <div class="pointer">
-                ${GamePointer()}
-            </div>
             <header class="name-player">
+                ${GamePointer()}
                 ${PlayerName(1)}
-                ${GameScore()}
+                ${GameScore(2)}
                 ${VsScore()}
-                ${GameScore()}
+                ${GameScore(1)}
                 ${PlayerName(2)}
             </header>
         </div>
