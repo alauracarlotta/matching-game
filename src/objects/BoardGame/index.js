@@ -1,26 +1,33 @@
 import './style.css';
-import cardsObject from './data.js';
+import shuffledCards from './data.js';
 import CardFrontBack from '/src/components/CardFrontBack';
 
 const BoardGame = (amountCards) => {
-	const shuffleArray = (array) => {
-		const shuffled = [...array]; // copia o array original
-		for (let i = shuffled.length - 1; i > 0; i--) {
-			const j = Math.floor(Math.random() * (i + 1));
-			[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+	window.boardGame = {};
+	let cardListBoardGameClicks = [];
+	window.boardGame.handleClick = (event) => {
+		console.log(event.target);
+		const $origin = event.target;
+		cardListBoardGameClicks.push($origin);
+		if (cardListBoardGameClicks.length == 2) {
+			console.log('Laurinha linda');
+			setTimeout(() => {
+				console.log('Depois de 2 segundos');
+				cardListBoardGameClicks.map((card) => {
+					const cardClick = card.closest('.card-front-back');
+					cardClick.classList.remove('-active');
+				});
+				cardListBoardGameClicks = [];
+			}, 1000);
 		}
-		return shuffled;
 	};
-
-	const shuffledCards = shuffleArray(cardsObject);
-
 	const htmlCadsList = shuffledCards.map((card) =>
 		CardFrontBack(card.iconImg, card.imgAlt)
 	);
 	const $htmlContent = htmlCadsList.join('');
 
 	return /* html */ `
-        <section class="board-game">
+        <section class="board-game" onclick="boardGame.handleClick(event)">
             <div class="cards-game">
                 ${$htmlContent}
             </div>
