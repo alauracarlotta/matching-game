@@ -7,7 +7,6 @@ const CardFrontBack = (iconImg, imgAlt) => {
 		const $origin = event.target;
 		const $cardFrontBack = $origin.closest('.card-front-back');
 		$cardFrontBack.classList.toggle('-active');
-		console.log($cardFrontBack);
 	};
 
 	return /* html */ `
