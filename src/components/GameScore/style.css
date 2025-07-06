@@ -1,14 +1,21 @@
 .game-score {
+	width: 50px;
+	height: 16px;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	box-sizing: border-box;
-	border: 2px solid var(--color-border-game-score-all);
+	box-shadow: 3px 0px var(--color-border-game-score-all),
+		-3px 0px var(--color-border-game-score-all),
+		0px 3px var(--color-border-game-score-all),
+		0px -3px var(--color-border-game-score-all);
 }
 
 .game-score > .square {
-	width: 1.6rem;
-	height: 1.6rem;
+	width: 33%;
+	height: 14px;
 	background-color: var(--color-background-game-score);
-	border: 2px solid var(--color-border-game-score-square);
+	border: 1px solid var(--color-border-game-score-square);
 }
 
 .game-score[data-points='1'] > .square:first-child {

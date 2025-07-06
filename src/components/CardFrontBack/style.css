@@ -9,6 +9,12 @@
 	cursor: pointer;
 }
 
+.-test {
+	box-shadow: 10px 0 crimson, 20px 0 crimson, -10px 0 crimson, -20px 0 crimson,
+		0 -10px crimson, 10px -10px crimson, -10px -10px crimson,
+		0 -20px crimson;
+}
+
 .card-front-back.-active {
 	transform: rotateY(180deg);
 }
